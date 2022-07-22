@@ -49,7 +49,7 @@ def get_mkt_data(contract):
     return data
 
 def get_sharadar_sec_and_ind(symbols):
-    nasdaq_api_key = 'xqLBtxUAuiSBxaR3rXxw'
+    nasdaq_api_key = 'api key'
     secind = nq.get_table('SHARADAR/TICKERS', ticker=[x for x in symbols if x != "ES"], paginate=True, api_key=nasdaq_api_key)
     secind = secind.drop(columns=['table'])[['ticker', 'sector', 'industry']].drop_duplicates()
     secind.rename(columns={'ticker': 'symbol'}, inplace=True)
