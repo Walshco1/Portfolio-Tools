@@ -1,3 +1,3 @@
 # Portfolio-Tools
 
-Miscellaneous to build investment database and run portfolio analysis.
+Miscellaneous tools to build investment database and run portfolio analysis.
